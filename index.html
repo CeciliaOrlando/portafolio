@@ -3,40 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portfolio</title>
+    <title>Mi Portfolio Full Stack</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Mi Portfolio</h1>
+        <h1>MARIA CECILIA ORLANDO</h1>
         <nav>
             <ul>
-                <li><a href="#proyectos">Proyectos</a></li>
                 <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <section id="proyectos">
-        <h2>Proyectos Destacados</h2>
-        <!-- Aquí incluirás tus proyectos -->
-    </section>
-
     <section id="sobre-mi">
         <h2>Sobre mí</h2>
-        <!-- Breve biografía -->
+        <p>
+          Soy una desarrolladora web motivada por el desafío intelectual que ofrece la programación y el diseño web. Con un background en el campo legal de más de 12 años de experiencia, tomé una nueva dirección que me permite explorar mi curiosidad por la tecnología y ampliar mis habilidades en un área dinámica y en constante evolución.</p>
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos Destacados</h2>
+        <div class="proyecto">
+            <h3>Proyecto 1</h3>
+            <p>Descripción breve del proyecto y tecnologías utilizadas.</p>
+            <a href="enlace-a-proyecto">Ver Proyecto</a>
+        </div>
+        <div class="proyecto">
+            <h3>Proyecto 2</h3>
+            <p>Descripción breve del proyecto y tecnologías utilizadas.</p>
+            <a href="enlace-a-proyecto">Ver Proyecto</a>
+        </div>
+        <!-- Agrega más proyectos según sea necesario -->
+    </section>
+
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Node.js, Express</li>
+            <li>React, Vue.js</li>
+            <li>Base de datos: MongoDB, PostgreSQL</li>
+            <!-- Agrega más habilidades -->
+        </ul>
     </section>
 
     <section id="contacto">
         <h2>Contacto</h2>
         <form>
-            <!-- Formulario de contacto -->
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+            <button type="submit">Enviar</button>
         </form>
     </section>
 
     <footer>
-        <p>© 2024 Mi Nombre</p>
+        <p>© 2024 MARIA CECILIA ORLANDO. Todos los derechos reservados.</p>
     </footer>
 </body>
 </html>
