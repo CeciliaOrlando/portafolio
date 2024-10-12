@@ -10,6 +10,7 @@ body {
 
 header {
   background: #8e24aa;
+  background: #ffb6c1;
   color: #fff;
   padding: 1rem 0;
   text-align: center;
@@ -51,6 +52,7 @@ section {
 
 h1, h2, h3 {
   color: #8e24aa;
+  color: #ffb6c1;
 }
 
 .proyecto {
@@ -73,6 +75,7 @@ h1, h2, h3 {
   margin-top: 10px;
   padding: 10px 15px;
   background: #8e24aa;
+  background: #ffb6c1;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -81,6 +84,7 @@ h1, h2, h3 {
 
 .proyecto a:hover {
   background: #9c27b0;
+  background: #ffc5d5;
 }
 
 form {
@@ -103,6 +107,7 @@ form button {
   margin-top: 10px;
   padding: 10px;
   background: #8e24aa;
+  background: #ffb6c1;
   color: white;
   border: none;
   border-radius: 5px;
@@ -112,22 +117,24 @@ form button {
 
 form button:hover {
   background: #9c27b0;
+  background: #ffc5d5;
 }
 /*
 footer {
   text-align: center;
   padding: 15px 0;
   background: #9c27b0;
+  background: #ffc5d5;
   color: white;
   position: relative;
   bottom: 0;
   width: 100%;
 } */
-
+/*
 @media (max-width: 600px) {
   nav ul li {
       display: block;
       margin: 10px 0;
   }
 }
-
+ */
