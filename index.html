@@ -9,9 +9,9 @@
 <body>
 
       <header style="display: flex; justify-content: space-between; align-items: center; padding: 0.5rem;">
-        <div style="display: flex; align-items: center;">
-          <h2 style="color: #fff; margin-right: 5px; font-size: 1.5rem;">MARIA CECILIA ORLANDO</h2>
-          <h4 style="color: #fff; font-size: 1rem;">Full Stack Developer</h4>
+        <div style="display: flex; flex-direction: column; align-items: center; margin-right: 10px;">
+          <h2 style="color: #fff; font-size: 1.5rem;">MARIA CECILIA ORLANDO</h2>
+          <h4 style="color: #fff; font-size: 1rem; margin-top: -10px;">Full Stack Developer</h4>
         </div>
         <nav>
           <ul style="display: flex; align-items: center; list-style: none; padding: 0; margin: 0;">
@@ -27,10 +27,11 @@
         </nav>
     </header>
 
-    <section id="sobre-mi">
+    <section id="sobre-mi" style="max-width: 1200px;">
+
+        <img src="https://cdn.pixabay.com/photo/2016/11/19/22/52/coding-1841550_1280.jpg" alt="coding" style="width: 1200px; height: 500px; object-fit: cover; margin: 0 auto;"/>
         <h2>Sobre mí</h2>
-        <img src="https://cdn.pixabay.com/photo/2016/11/19/22/52/coding-1841550_1280.jpg" alt="coding" style="width: 800px; height: 500px; object-fit: cover; margin: 0 auto;"/>
-        <div style="text-align: center;">
+        <div style="text-align: center; max-width: 1200px; margin: 0 auto;">
           <p>
             Soy una desarrolladora web apasionada, motivada por el desafío intelectual que ofrece tanto la programación como el diseño web. Mi trayectoria profesional comenzó en el ámbito legal, donde acumulé más de 12 años de experiencia. Durante este tiempo, desarrollé habilidades analíticas y una atención meticulosa a los detalles, que ahora aplico en el mundo de la tecnología.
 
@@ -44,8 +45,7 @@
           </p>
         </div>
     </section>
-
-    <section id="proyectos">
+    <section id="proyectos" style="max-width: 1200px;">
         <h2>Proyectos Destacados</h2>
         <div class="proyecto">
             <h3>Proyecto 1</h3>
@@ -66,36 +66,33 @@
         <!-- Agrega más proyectos según sea necesario -->
     </section>
 
-    <section id="habilidades">
+    <section id="habilidades" style="max-width: 1200px;">
         <h2>Habilidades</h2>
         <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>Node.js, Express</li>
-            <li>React, Vue.js</li>
-            <li>Base de datos: MongoDB, PostgreSQL</li>
-            <!-- Agrega más habilidades -->
+            <li>Ruby & Ruby on Rails</li>
+            <li>HTML, CSS, Flexbox, Grid layout</li>
+            <li>JavaScript,jQuery, Angular, NodeJS, React</li>
+            <li>Hotwire, Turbo y Stimulus</li>
+            <li>PostgreSQL </li>
+            <li>Github, Heroku, Visual Studio Code</li>
+            <li>Trello, Slack</li>
+            <li>Microsoft Office</li>
+
+                <!-- Agrega más habilidades -->
         </ul>
     </section>
 
-    <section id="contacto">
+    <section id="contacto" style="max-width: 1200px;">
         <h2>Contacto</h2>
-        <form>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
-            <button type="submit">Enviar</button>
-        </form>
+        <p>Puedes contactarme por email a: <a href="mailto:mariaceciliaorlando2021@gmail.com">mariaceciliaorlando2021@gmail.com</a></p>
     </section>
 
-    <footer style="background-color: #ffc5d5; color: #333; padding: 15px 0; text-align: center;">
-        <p>© 2024 MARIA CECILIA ORLANDO. Todos los derechos reservados.</p>
-
-        <a style="color: #e2553f;" href="https://github.com/CeciliaOrlando" target="_blank">GitHub</a> |
-        <a style="color: #e2553f;" href="https://www.linkedin.com/in/maria-cecilia-orlando-804534263/" target="_blank">LinkedIn</a>
-
+    <footer style="background-color:#8e24aa; color: #333; padding: 15px 0; text-align: center; margin-bottom: 0;">
+        <p style="color: #fff;"> 2024 MARIA CECILIA ORLANDO. Todos los derechos reservados.</p>
+        <div style="display: flex; justify-content: center; align-items: center;">
+          <a style="color: #fff; margin-right: 10px;" href="https://github.com/CeciliaOrlando" target="_blank">GitHub</a>
+          <a style="color: #fff;" href="https://www.linkedin.com/in/maria-cecilia-orlando-804534263/" target="_blank">LinkedIn</a>
+        </div>
     </footer>
-</body>
+  </body>
 </html>
