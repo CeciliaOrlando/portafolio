@@ -119,22 +119,18 @@ form button:hover {
   background: #9c27b0;
   background: #ffc5d5;
 }
-/*
+
 footer {
   text-align: center;
   padding: 15px 0;
-  background: #9c27b0;
-  background: #ffc5d5;
-  color: white;
   position: relative;
   bottom: 0;
   width: 100%;
-} */
-/*
+}
+
 @media (max-width: 600px) {
   nav ul li {
       display: block;
       margin: 10px 0;
   }
 }
- */
