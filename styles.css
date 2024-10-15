@@ -9,7 +9,6 @@ body {
 }
 
 header {
-  background: #8e24aa;
   background: #ffb6c1;
   color: #fff;
   padding: 1rem 0;
@@ -22,7 +21,7 @@ nav ul {
 }
 
 nav ul li {
-  display: inline;
+  display: inline-block;
   margin: 0 15px;
 }
 
@@ -52,7 +51,6 @@ section {
 
 h1, h2, h3 {
   color: #8e24aa;
-  color: #ffb6c1;
 }
 
 .proyecto {
@@ -74,7 +72,6 @@ h1, h2, h3 {
   display: inline-block;
   margin-top: 10px;
   padding: 10px 15px;
-  background: #8e24aa;
   background: #ffb6c1;
   color: white;
   text-decoration: none;
@@ -83,7 +80,6 @@ h1, h2, h3 {
 }
 
 .proyecto a:hover {
-  background: #9c27b0;
   background: #ffc5d5;
 }
 
@@ -106,7 +102,6 @@ form input, form textarea {
 form button {
   margin-top: 10px;
   padding: 10px;
-  background: #8e24aa;
   background: #ffb6c1;
   color: white;
   border: none;
@@ -116,21 +111,34 @@ form button {
 }
 
 form button:hover {
-  background: #9c27b0;
   background: #ffc5d5;
 }
-/*
-footer {
-  text-align: center;
-  padding: 15px 0;
-  position: relative;
-  bottom: 0;
-  width: 100%; */
-}
 
+/* Media Queries */
 @media (max-width: 600px) {
   nav ul li {
-      display: block;
-      margin: 10px 0;
+    display: block;
+    margin: 10px 0;
+    text-align: center; /* Centra los enlaces en dispositivos pequeños */
+  }
+
+  section {
+    padding: 15px; /* Reduce el padding en secciones pequeñas */
+  }
+
+  .proyecto {
+    padding: 10px; /* Reduce el padding en los proyectos */
+  }
+
+  h1, h2, h3 {
+    font-size: 1.5em; /* Ajusta el tamaño de los encabezados en pantallas pequeñas */
+  }
+
+  form input, form textarea {
+    font-size: 14px; /* Aumenta la legibilidad de los campos en pantallas pequeñas */
+  }
+
+  form button {
+    padding: 8px; /* Ajusta el tamaño del botón en pantallas pequeñas */
   }
 }
