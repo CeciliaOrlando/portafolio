@@ -18,6 +18,7 @@ header {
 nav ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 nav ul li {
@@ -140,5 +141,35 @@ form button:hover {
 
   form button {
     padding: 8px; /* Ajusta el tamaño del botón en pantallas pequeñas */
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  nav ul li {
+    display: inline-block;
+    margin: 0 10px; /* Menos margen en tabletas */
+  }
+
+  section {
+    padding: 20px; /* Padding estándar en tabletas */
+  }
+
+  h1, h2, h3 {
+    font-size: 1.75em; /* Tamaño de encabezado ajustado para tabletas */
+  }
+}
+
+@media (min-width: 901px) {
+  nav ul li {
+    display: inline-block;
+    margin: 0 15px; /* Espaciado estándar en escritorio */
+  }
+
+  section {
+    padding: 20px; /* Padding estándar en escritorio */
+  }
+
+  h1, h2, h3 {
+    font-size: 2em; /* Tamaño de encabezado ajustado para escritorio */
   }
 }
