@@ -72,113 +72,98 @@ section {
    margin: 0 auto;
 }
 
-.proyectos-conteiner {
-  max-width: 1400px;
-  display: flex;
-  flex-direction: column;
-  }
 
-
-
-.fondo {
+.imagen-principal {
   width: 1400px;
   height: 500px;
   object-fit: cover;
   margin: 0 auto;
 }
 
+.proyectos-conteiner {
+  max-width: 1400px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+
+  .proyectoss {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+.proyecto-1 {
+  flex: 1;
+  margin:  5px;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #e8e3f1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.proyecto-link {
+  display: flex;
+  justify-content:center;
+  margin-top: auto;
+  gap: 15px;
+
+}
+
+
+.proyecto-btn {
+  background-color: #B39DDB;
+  border-radius: 10%;
+  color: #fff;
+  padding: 10px 15px;
+  width: auto;
+  max-width: 200px;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+
+
+.proyecto-btn:hover {
+  background-color: #8e24aa;
+  color: #fff;
+  cursor: pointer;
+}
+
+
 .skillswap {
   width: 100%;
   height: auto;
   object-fit: contain;
-  margin-bottom: 15px;
+
 }
+
 
 .agenda {
   width: 100%;
   height: auto;
   object-fit: contain;
-  margin-bottom: 15px;
+
 }
 
-.ecohuse {
-width: 80%;
- height: auto;
- object-fit: contain;
- margin-bottom: 15px;
+.ecohouse {
+width: 100%;
+height: auto;
+object-fit: contain;
+
 }
 
 .card-link {
   color: #fff;
 }
 
-.proyecto:hover {
-  transform: scale(1.05);
-}
 
 h1, h2, h3 {
   color: #8e24aa;
-}
-
-.proyecto {
-  margin-bottom: 20px;
-  padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
-.proyecto h3 {
-  margin: 0;
-}
-
-.proyecto p {
-  margin: 10px 0;
-}
-
-.proyecto a {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 15px;
-  background: #ffb6c1;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background 0.3s;
-}
-
-.proyecto a:hover {
-  background: #ffc5d5;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-}
-
-form label {
-  margin: 10px 0 5px;
-}
-
-form input, form textarea {
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  margin-bottom: 10px;
-}
-
-form button {
-  margin-top: 10px;
-  padding: 10px;
-  background: #ffb6c1;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-form button:hover {
-  background: #ffc5d5;
 }
 
 .habilidades-conteiner {
@@ -204,6 +189,7 @@ footer {
     align-items: center
   }
 
+
 /* Media Queries */
 @media (max-width: 600px) {
   header {
@@ -213,11 +199,11 @@ footer {
   nav ul li {
     display: block;
     margin: 10px 0;
-    text-align: center; /* Centra los enlaces en dispositivos pequeños */
+    text-align: center;
   }
 
   section {
-    padding: 15px; /* Reduce el padding en secciones pequeñas */
+    padding: 15px;
   }
 
   img {
@@ -226,48 +212,48 @@ footer {
   }
 
   .proyecto {
-    padding: 10px; /* Reduce el padding en los proyectos */
+    padding: 10px;
   }
 
   h1, h2, h3 {
-    font-size: 1.5em; /* Ajusta el tamaño de los encabezados en pantallas pequeñas */
+    font-size: 1.5em;
   }
 
   form input, form textarea {
-    font-size: 14px; /* Aumenta la legibilidad de los campos en pantallas pequeñas */
+    font-size: 14px;
   }
 
   form button {
-    padding: 8px; /* Ajusta el tamaño del botón en pantallas pequeñas */
+    padding: 10px; /* Aumenta un poco el tamaño */
   }
 }
 
 @media (min-width: 601px) and (max-width: 900px) {
   nav ul li {
     display: inline-block;
-    margin: 0 10px; /* Menos margen en tabletas */
+    margin: 0 10px;
   }
 
   section {
-    padding: 20px; /* Padding estándar en tabletas */
+    padding: 20px;
   }
 
   h1, h2, h3 {
-    font-size: 1.75em; /* Tamaño de encabezado ajustado para tabletas */
+    font-size: 1.75em;
   }
 }
 
 @media (min-width: 901px) {
   nav ul li {
     display: inline-block;
-    margin: 0 15px; /* Espaciado estándar en escritorio */
+    margin: 0 15px;
   }
 
   section {
-    padding: 20px; /* Padding estándar en escritorio */
+    padding: 20px;
   }
 
   h1, h2, h3 {
-    font-size: 2em; /* Tamaño de encabezado ajustado para escritorio */
+    font-size: 2em;
   }
 }
