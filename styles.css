@@ -195,12 +195,14 @@ footer {
   header {
     padding: 10px;
   }
+  nav ul {
+    flex-direction: vertical;
+  }
 
   nav ul li {
-    display: block;
     margin: 10px 0;
-    text-align: center;
   }
+}
 
   section {
     padding: 15px;
@@ -224,7 +226,7 @@ footer {
   }
 
   form button {
-    padding: 10px; /* Aumenta un poco el tamaño */
+    padding: 10px;
   }
 }
 
