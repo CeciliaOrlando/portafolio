@@ -52,17 +52,16 @@ h4 {
 #links-menu li {
   margin-left: 20px;
 }
-
 #links-menu a {
   text-decoration: none;
-  color: #847577;
+  color: #e5e6e4;
   font-weight: bold;
   transition: color 0.3s ease;
   font-size: 1.2em;
 }
 
 #links-menu a:hover {
-  color: #cfd2cd;
+  color: #847577;
   text-decoration: underline;
 
 }
@@ -79,8 +78,8 @@ h4 {
   padding: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   white-space: nowrap;
-  position: absolute; /* Cambia a posición absoluta para que esté a la izquierda */
-  left: 130px; /* Ajusta según sea necesario */
+  position: absolute;
+  left: 130px;
 }
 .card:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -115,7 +114,7 @@ h4 {
   justify-content: center;
   align-items: center;
   gap: 10px;
-}
+  }
 
 button {
   background-color: #a6a2a2;
@@ -151,17 +150,21 @@ button:hover {
   flex-wrap: wrap;
   justify-content: space-between;
 }
-
 .proyecto-1 {
-  background-color: #fbfbf2;
+  background-color: #a6a2a2;
+  color: #fbfbf2;
   border-radius: 8px;
   padding: 15px;
-  margin-bottom: 20px;
+  margin: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 30%;
-  display: inline-block;
-  vertical-align: top;
+  width: calc(33.33% - 20px);
   min-height: 400px;
+  text-align: justify;
+
+}
+.proyecto-1:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: matrix(1.05, 0, 0, 1.05, 0, 0);
 }
 
 .proyecto-1 img {
@@ -169,8 +172,16 @@ button:hover {
   border-radius: 5px;
 }
 
+.proyecto-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
 .proyecto-btn {
-  background-color: #a6a2a2;
+  background-color: #847577;
   color: #fbfbf2;
   text-decoration: none;
   padding: 10px 15px;
@@ -178,12 +189,16 @@ button:hover {
 }
 
 .proyecto-btn:hover {
-  background-color: #847577;
+  background-color: #fbfbf2;
+  color: #847577;
+
 }
+
 
 /* Estilos de habilidades */
 .habilidades-conteiner {
   margin: 20px 0;
+
 }
 
 .habilidades-conteiner ul {
@@ -201,18 +216,21 @@ button:hover {
 
 /* Estilos de contacto */
 .contacto {
-  margin: 20px 0;
+  margin: 40px 0;
 }
 
-#contact-info p {
-  margin: 5px 0;
+.redes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0;
 }
 
 .footer {
   text-align: center;
   background-color: #847577;
   color: #fbfbf2;
-  padding: 10px;
-  margin-top: 20px;
+  padding: 15px;
+  margin-top: 80px;
   border-radius: 8px;
 }
