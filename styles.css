@@ -21,10 +21,10 @@ body {
 
 /* Estilos del header */
 header {
-  padding: 20px;
+  padding: 130px;
   border-radius: 8px;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; /* Asegúrate de que los elementos estén espaciados */
   align-items: center;
   background-color: #a6a2a2;
 }
@@ -33,33 +33,38 @@ h4 {
   margin: 0;
   color: #e5e6e4;
 }
+
 .navbar {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+  flex: 1;
+  padding-left: 50px; /* Ajusta el espacio a la derecha */
 }
 
 #links-menu {
   list-style: none;
-  padding: 0;
-  display: inline-block;
+  padding: 10px;
+  display: flex;
+  justify-content: flex-start; /* Alinea los enlaces a la izquierda */
 }
 
 #links-menu li {
-  display: inline;
-  margin-right: 15px;
+  margin-left: 20px;
 }
 
 #links-menu a {
   text-decoration: none;
-  color: #cfd2cd;
+  color: #847577;
   font-weight: bold;
   transition: color 0.3s ease;
+  font-size: 1.2em;
 }
 
 #links-menu a:hover {
-  color: #847577;
+  color: #cfd2cd;
   text-decoration: underline;
+
 }
 
 /* Estilos de la tarjeta */
@@ -70,30 +75,34 @@ h4 {
   align-items: center;
   background-color: #fbfbf2;
   border-radius: 10px;
-  margin: auto;
-  padding: 50px 200px;
+  margin: 20px 0;
+  padding: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   white-space: nowrap;
+  position: absolute; /* Cambia a posición absoluta para que esté a la izquierda */
+  left: 130px; /* Ajusta según sea necesario */
+}
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transform: matrix(1.05, 0, 0, 1.05, 0, 0);
 }
 
 .img-avatar {
-  width: 250px;
-  height: 300px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   margin-right: 30px;
   transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
   filter: contrast(120%);
+  object-fit: cover;
 }
 
-.img-avatar:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
 
 .info {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
 }
 
 .info {
@@ -101,7 +110,11 @@ h4 {
 }
 
 .contact-buttons {
-  margin-top: 10px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 button {
@@ -117,6 +130,8 @@ button {
 button:hover {
   background-color: #847577;
 }
+
+
 
 /* Sección sobre mí */
 .sobre-mi {
