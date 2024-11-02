@@ -288,7 +288,7 @@ button:hover {
 
 @media (max-width: 600px) {
   header {
-    padding: 40px;
+    padding: 20px;
   }
 
   h4 {
