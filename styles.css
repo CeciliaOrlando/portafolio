@@ -24,7 +24,7 @@ header {
   padding: 130px;
   border-radius: 8px;
   display: flex;
-  justify-content: space-between; /* Asegúrate de que los elementos estén espaciados */
+  justify-content: space-between;
   align-items: center;
   background-color: #a6a2a2;
 }
@@ -39,19 +39,20 @@ h4 {
   justify-content: flex-end;
   text-align: center;
   flex: 1;
-  padding-left: 50px; /* Ajusta el espacio a la derecha */
+  padding-left: 50px;
 }
 
 #links-menu {
   list-style: none;
   padding: 10px;
   display: flex;
-  justify-content: flex-start; /* Alinea los enlaces a la izquierda */
+  justify-content: flex-start;
 }
 
 #links-menu li {
   margin-left: 20px;
 }
+
 #links-menu a {
   text-decoration: none;
   color: #e5e6e4;
@@ -63,7 +64,6 @@ h4 {
 #links-menu a:hover {
   color: #847577;
   text-decoration: underline;
-
 }
 
 /* Estilos de la tarjeta */
@@ -96,16 +96,11 @@ h4 {
   object-fit: cover;
 }
 
-
 .info {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.info {
-  flex: 1;
 }
 
 .contact-buttons {
@@ -114,7 +109,7 @@ h4 {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  }
+}
 
 button {
   background-color: #a6a2a2;
@@ -130,8 +125,6 @@ button:hover {
   background-color: #847577;
 }
 
-
-
 /* Sección sobre mí */
 .sobre-mi {
   margin: 20px 0;
@@ -146,7 +139,6 @@ button:hover {
 /* Estilos de proyectos */
 .proyectos-conteiner {
   margin: 20px 0;
-
 }
 
 .proyectoss {
@@ -198,11 +190,9 @@ button:hover {
   color: #847577;
 }
 
-
 /* Estilos de habilidades */
 .habilidades-conteiner {
   margin: 20px 0;
-
 }
 
 .habilidades-conteiner ul {
@@ -237,4 +227,85 @@ button:hover {
   padding: 15px;
   margin-top: 80px;
   border-radius: 8px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  header {
+    padding: 80px;
+  }
+
+  .navbar {
+    padding-left: 30px;
+  }
+
+  .card {
+    left: 20px;
+    position: relative;
+  }
+
+  #links-menu li {
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 900px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 60px;
+  }
+
+  .card {
+    flex-direction: column;
+    margin: 0 auto;
+    position: relative;
+    left: 0;
+  }
+
+  .img-avatar {
+    width: 120px;
+    height: 120px;
+  }
+
+  #links-menu {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  #links-menu li {
+    margin: 5px 0;
+  }
+
+  .proyecto-1 {
+    width: calc(100% - 20px);
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 600px) {
+  header {
+    padding: 40px;
+  }
+
+  h4 {
+    font-size: 1.5em;
+  }
+
+  button {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .proyecto-1 {
+    margin: 5px 0;
+  }
+
+  .footer {
+    font-size: 0.9em;
+    padding: 10px;
+  }
 }
