@@ -229,125 +229,66 @@ button:hover {
   border-radius: 8px;
 }
 
-/* Media Queries */
-@media (max-width: 1200px) {
-  header {
-    padding: 80px;
-  }
 
+
+/* Mobile Styles */
+@media (max-width: 600px) {
   .navbar {
-    position: relative;
-}
-
-#links-menu {
-    display: flex;
-    list-style: none;
-}
-
-
-  .card {
-    left: 20px;
-    position: relative;
+      flex-direction: column;
   }
 
   #links-menu li {
-    margin-left: 15px;
-  }
-}
-
-@media (max-width: 900px) {
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 60px;
+      margin: 10px 0;
   }
 
-  .card {
-    flex-direction: column;
-    margin: 0 auto;
-    position: relative;
-    left: 0;
+  .proyecto-1 {
+      width: 90%; /* Aumenta el ancho en móviles */
+      margin: 10px auto; /* Centra el proyecto */
   }
 
   .img-avatar {
-    width: 120px;
-    height: 120px;
+      width: 120px; /* Ajusta el tamaño de la imagen en móviles */
   }
 
-  #links-menu {
-    flex-direction: column;
-    padding: 0;
+  .contact-buttons button,
+  .proyecto-btn {
+      width: 100%; /* Botones ocupan todo el ancho */
+      margin: 10px 0;
   }
+}
 
-  #links-menu li {
-    margin: 5px 0;
-  }
-
+/* Tablet Styles */
+@media (min-width: 601px) and (max-width: 900px) {
   .proyecto-1 {
-    width: calc(100% - 20px);
+      width: 45%; /* Dos proyectos por fila en tabletas */
   }
 
-  .contact-buttons {
-    flex-direction: column;
+  .img-avatar {
+      width: 140px; /* Ajusta el tamaño de la imagen en tabletas */
+  }
+
+  .contact-buttons button,
+  .proyecto-btn {
+      width: 48%; /* Botones ocupan casi todo el ancho */
   }
 }
 
-@media (max-width: 600px) {
-  @media (max-width: 600px) {
-    header {
-        padding: 20px;
-    }
-
-    .navbar {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    #links-menu {
-        display: none; /* Ocultamos el menú por defecto */
-        flex-direction: column;
-        background: white; /* Fondo para el menú desplegable */
-        width: 100%; /* Ancho completo */
-        position: absolute; /* Para colocar el menú */
-        top: 50px; /* Ajusta según sea necesario */
-        left: 0;
-        z-index: 1; /* Aseguramos que el menú esté en la parte superior */
-    }
-
-    #links-menu li {
-        padding: 10px; /* Espaciado entre los enlaces */
-        width: 100%; /* Ancho completo para cada enlace */
-    }
-
-    #menu-toggle {
-        margin-bottom: 10px; /* Espacio debajo del botón */
-    }
-
-    .card {
-        width: 100%; /* Ancho completo en móviles */
-        margin: 0 auto; /* Centra la tarjeta */
-    }
-}
-.show {
-  display: flex; /* Mostrar el menú cuando se activa */
-}
-
-  h4 {
-    font-size: 1.5em;
-  }
-
-  button {
-    width: 100%;
-    margin-right: 0;
-  }
-
+/* Desktop Styles */
+@media (min-width: 901px) and (max-width: 1200px) {
   .proyecto-1 {
-    margin: 5px 0;
+      width: 30%; /* Tres proyectos por fila en escritorio */
   }
 
-  .footer {
-    font-size: 0.9em;
-    padding: 10px;
+  .img-avatar {
+      width: 150px; /* Tamaño estándar de imagen en escritorio */
+  }
+
+  .navbar {
+      justify-content: space-between; /* Espaciado en escritorio */
+  }
+
+  .contact-buttons button,
+  .proyecto-btn {
+      width: auto; /* Botones en tamaño natural */
   }
 }
