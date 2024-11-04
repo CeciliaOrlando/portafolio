@@ -232,80 +232,56 @@ button:hover {
 
 
 /* Mobile Styles */
-@media (max-width: 600px) {
-  body {
-      padding: 0 10px; /* Añadir un poco de espacio alrededor */
+@media (max-width: 400px) {
+  .container {
+      padding: 10px;
+      margin: 0 auto;
+      text-align: center;
+      max-width: 95%;
+      width: 95%;
+
   }
 
-  .navbar {
-      display: flex;
-      flex-direction: column;
-      align-items: center; /* Centrar el menú */
-      background-color: #fff; /* Fondo blanco para destacar el menú */
-      padding: 10px 0; /* Espaciado vertical */
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para el menú */
-  }
-
-  #links-menu {
-      list-style: none; /* Quitar viñetas */
-      padding: 0; /* Quitar padding */
-      margin: 0; /* Quitar margin */
-      width: 100%; /* Hacer que el menú ocupe todo el ancho */
-  }
-
-  #links-menu li {
-      margin: 10px 0; /* Espacio entre enlaces */
-      text-align: center; /* Centrar texto */
-  }
-
-  #links-menu a {
-      text-decoration: none; /* Quitar subrayado */
-      color: #333; /* Color del texto */
-      font-weight: bold; /* Hacer el texto más prominente */
-  }
+  .header {
+      align-items: center; /* Centra los elementos */
+        }
 
   .card {
-      width: 90%; /* Hacer que la tarjeta ocupe el 90% del ancho */
-      margin: 20px auto; /* Centrar la tarjeta */
-      padding: 15px; /* Espaciado interno */
-      background-color: #fff; /* Fondo blanco */
-      border-radius: 8px; /* Bordes redondeados */
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-      display: flex; /* Usar flex para el contenido */
-      flex-direction: column; /* Colocar elementos en columna */
-      align-items: center; /* Centrar contenido */
+      align-items: center; /* Centra los elementos */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para un efecto más atractivo */
+      border-radius: 8px; /* Esquinas redondeadas */
+      width: 20%; /* Ancho responsivo */
+      max-width: 350px; /* Limita el ancho máximo para pantallas pequeñas */
+  }
+}
+
+   .sobre-mi {
+    padding: 0.5px;
+      text-align: left;
+  }
+
+  .proyectos-conteiner {
+    flex-direction: column;
+}
+
+  .proyecto-1 {
+      width: 80%; /* Aumenta el ancho en móviles */
+      margin: auto; /* Centra el proyecto */
+      margin-bottom: 20px;
+
   }
 
   .img-avatar {
-      width: 120px; /* Ajustar tamaño de imagen */
-      border-radius: 50%; /* Hacer la imagen circular */
-      margin-bottom: 15px; /* Espacio debajo de la imagen */
-  }
-
-  .contact-buttons {
-      display: flex; /* Usar flex para los botones */
-      flex-direction: column; /* Colocar botones en columna */
-      width: 100%; /* Ancho completo */
+      width: 100px; /* Ajusta el tamaño de la imagen en móviles */
   }
 
   .contact-buttons button,
   .proyecto-btn {
       width: 100%; /* Botones ocupan todo el ancho */
-      margin: 10px 0; /* Espacio entre botones */
-      padding: 10px; /* Espaciado interno */
-      border: none; /* Sin borde */
-      border-radius: 5px; /* Bordes redondeados */
-      background-color: #007BFF; /* Color de fondo */
-      color: #fff; /* Color del texto */
-      font-size: 16px; /* Tamaño de fuente */
-      cursor: pointer; /* Cursor pointer */
+      margin: 10px 0;
   }
 
-  .contact-buttons button:hover,
-  .proyecto-btn:hover {
-      background-color: #0056b3; /* Color al pasar el mouse */
-  }
-}
+
 /* Tablet Styles */
 @media (min-width: 601px) and (max-width: 900px) {
   .proyecto-1 {
