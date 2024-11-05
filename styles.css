@@ -81,6 +81,7 @@ h4 {
   position: absolute;
   left: 130px;
 }
+
 .card:hover {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   transform: matrix(1.05, 0, 0, 1.05, 0, 0);
@@ -186,8 +187,6 @@ button:hover {
   justify-content: center;
   align-items: center;
   margin-top: 20px;
-  
-
 }
 
 .proyecto-btn {
@@ -241,4 +240,119 @@ button:hover {
   padding: 15px;
   margin-top: 80px;
   border-radius: 8px;
+}
+
+/* Media Queries */
+
+/* Móviles (hasta 600px) */
+@media (max-width: 600px) {
+  header {
+    padding: 50px 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar {
+    padding-left: 0;
+    justify-content: center;
+    width: 100%;
+  }
+
+  #links-menu {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  #links-menu li {
+    margin: 10px 0;
+  }
+
+  .card {
+    position: static;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+  .img-avatar {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .proyectos-conteiner {
+    margin: 10px 0;
+  }
+
+  .proyecto-1 {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+  }
+
+  .footer {
+    padding: 20px 10px;
+  }
+}
+
+/* Tablets (hasta 900px) */
+@media (max-width: 900px) {
+  header {
+    padding: 80px 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar {
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  .card {
+    position: static;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .proyectos-conteiner {
+    margin: 20px 0;
+  }
+
+  .proyecto-1 {
+    width: calc(50% - 10px);
+    margin: 10px 0;
+  }
+
+  .contact-buttons {
+    flex-direction: column;
+  }
+
+  .footer {
+    padding: 20px 10px;
+  }
+}
+
+/* Escritorio (más de 900px) */
+@media (min-width: 901px) {
+  .card {
+    position: absolute;
+    left: 130px;
+    flex-direction: row;
+  }
+
+  .proyecto-1 {
+    width: calc(45% - 10px);
+    margin: 10px;
+  }
+
+  .proyecto-1:hover {
+    transform: scale(1.05);
+  }
+
+  .footer {
+    padding: 15px;
+    margin-top: 80px;
+  }
 }
