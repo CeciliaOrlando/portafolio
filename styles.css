@@ -176,6 +176,20 @@ button:hover {
   margin-top: 20px;
 }
 
+.proyecto-video {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  
+
+}
+
 .proyecto-btn {
   background-color: #847577;
   color: #fbfbf2;
@@ -227,93 +241,4 @@ button:hover {
   padding: 15px;
   margin-top: 80px;
   border-radius: 8px;
-}
-
-
-
-/* Mobile Styles */
-@media (max-width: 400px) {
-  .container {
-      padding: 10px;
-      margin: 0 auto;
-      text-align: center;
-      max-width: 95%;
-      width: 95%;
-
-  }
-
-  .header {
-      align-items: center; /* Centra los elementos */
-        }
-
-  .card {
-      align-items: center; /* Centra los elementos */
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra para un efecto más atractivo */
-      border-radius: 8px; /* Esquinas redondeadas */
-      width: 20%; /* Ancho responsivo */
-      max-width: 350px; /* Limita el ancho máximo para pantallas pequeñas */
-  }
-}
-
-   .sobre-mi {
-    padding: 0.5px;
-      text-align: left;
-  }
-
-  .proyectos-conteiner {
-    flex-direction: column;
-}
-
-  .proyecto-1 {
-      width: 80%; /* Aumenta el ancho en móviles */
-      margin: auto; /* Centra el proyecto */
-      margin-bottom: 20px;
-
-  }
-
-  .img-avatar {
-      width: 100px; /* Ajusta el tamaño de la imagen en móviles */
-  }
-
-  .contact-buttons button,
-  .proyecto-btn {
-      width: 100%; /* Botones ocupan todo el ancho */
-      margin: 10px 0;
-  }
-
-
-/* Tablet Styles */
-@media (min-width: 601px) and (max-width: 900px) {
-  .proyecto-1 {
-      width: 45%; /* Dos proyectos por fila en tabletas */
-  }
-
-  .img-avatar {
-      width: 140px; /* Ajusta el tamaño de la imagen en tabletas */
-  }
-
-  .contact-buttons button,
-  .proyecto-btn {
-      width: 48%; /* Botones ocupan casi todo el ancho */
-  }
-}
-
-/* Desktop Styles */
-@media (min-width: 901px) and (max-width: 1200px) {
-  .proyecto-1 {
-      width: 30%; /* Tres proyectos por fila en escritorio */
-  }
-
-  .img-avatar {
-      width: 150px; /* Tamaño estándar de imagen en escritorio */
-  }
-
-  .navbar {
-      justify-content: space-between; /* Espaciado en escritorio */
-  }
-
-  .contact-buttons button,
-  .proyecto-btn {
-      width: auto; /* Botones en tamaño natural */
-  }
 }
