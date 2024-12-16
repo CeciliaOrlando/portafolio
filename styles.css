@@ -34,6 +34,10 @@ h4 {
   color: #e5e6e4;
 }
 
+/* .icon-color {
+  color: #847577 !important;
+} */
+
 .navbar {
   display: flex;
   justify-content: flex-end;
@@ -231,6 +235,7 @@ button:hover {
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 20px 0;
+  background-color: #847577;
 }
 
 .footer {
